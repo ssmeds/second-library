@@ -6,10 +6,13 @@
 //       return data
 //     })
 // }
+
+const URL = 'https://stinas-svelte-library.herokuapp.com/books'
+
 import { writable } from "svelte/store";
 
 export function updateList(books) {
-  fetch("http://localhost:3000/books")
+  fetch(URL)
     .then((res) => res.json())
     .then((data) => {
       books = data
@@ -19,7 +22,7 @@ export function updateList(books) {
 
 export const deleteBook = (id) => {
   console.log('delete id', id);
-  fetch(`http://localhost:3000/books/${id}`, {
+  fetch(`${URL}/${id}`, {
     method: 'delete'
   })
     .then(res => res.json())

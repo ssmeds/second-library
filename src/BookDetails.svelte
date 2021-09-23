@@ -1,6 +1,6 @@
 <script>
   export let showBook = {};
-  export const URL = "http://localhost:3000/books";
+  export const URL = "https://stinas-svelte-library.herokuapp.com/books";
   // export let statusChange;
   export let deleteBook;
 
@@ -57,7 +57,9 @@
 </div>
 
 <div class="back">
-  <a href="/">Tillbaka till alla böcker</a>
+  <a href="https://stinas-svelte-library.herokuapp.com/"
+    >Tillbaka till alla böcker</a
+  >
 </div>
 
 <style>

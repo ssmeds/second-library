@@ -5,7 +5,7 @@
   import { onMount } from "svelte";
 
   //URL för fetch
-  export const URL = "http://localhost:3000/books";
+  export const URL = "https://stinas-svelte-library.herokuapp.com/books";
 
   // State för att hantera böckerna
   export let books = [];
